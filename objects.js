@@ -6,6 +6,13 @@
             - Add a property named `size` and set it to a number value between `0` and `20`.
             - Add a property named `contents` and set it to be an empty array.
  */
+var plainBox = {
+	color: "blue",
+	size: "1",
+	contents:[]
+}
+
+
 
 
 /*
@@ -23,6 +30,13 @@
             - add a key named `passengers` and set it to be an empty array.
  */
 
+var stockCar = {
+	model: "honda",
+	year: 2005,
+	automaticTransmission: 0,
+	driver: null,
+	passengers: []
+}
 
 /*
     Add new property inside a function
@@ -38,6 +52,13 @@
         Finally, invoke your new function while passing in the `plainPerson` object and additional agrument values, then store the return value in a variable named `completePerson`. Use `console.log` three times to print the entire object, just the value at `name`, and just the value at `age`.
  */
 
+var plainPerson = {}
+function buildPerson(person,namestring,age){
+person.name = namestring;
+plainPerson.age = age;
+return person + " " + namestring + " " + age;
+}
+console.log(buildPerson("luc", "lambert", 11));
 
 /*
     # Display values of objects that are inside an array
@@ -61,7 +82,59 @@
             =====
             ...
  */
-
+var arrayOfObjects = [
+  {
+    id: 0,
+    date: "Monday Jan 25 2015 2:01 PM total: 279.38",
+    total: "279.38"
+  },
+  {
+    id: 1,
+    date: "Monday Jan 27 2015 11:31 AM, total: 79.80",
+    total: "79.80"
+  },
+  {
+    id: 2,
+    date: "Monday Feb 1 2015 7:56 AM, total: 15.62",
+    total: "15.62"
+  },
+  {
+    id: 3,
+    date: "Monday Feb 1 2015 9:43 AM",
+    total: "19.83"
+  },
+  {
+    id: 4,
+    date: "Monday Feb 1 2015 11:08 PM",
+    total: "56.69"
+  },
+  {
+    id: 5,
+    date: "Monday Feb 13 2015 10:22 AM",
+    total: "137.92"
+  },
+  {
+    id: 6,
+    date: "Monday Feb 14 2015 6:54 PM",
+    total: "938.65"
+  },
+  {
+    id: 7,
+    date: "Monday Feb 14 2015 7:17 PM",
+    total: "43.77"
+  },
+  {
+    id: 8,
+    date: "Monday Feb 14 2015 7:18 PM",
+    total: "28.54"
+  },
+  {
+    id: 9,
+    date: "Monday Feb 14 2015 7:18 PM",
+    total: "194.33"
+  }
+]
+console.log(arrayOfObjects)
 
 /*
     # Addition with an object
@@ -73,9 +146,15 @@
 
         Go ahead and create some more objects and pass them to this function. Have fun with it.
 */
-
-
-/*
+ 
+var sumObj = {
+	a: 1,
+	b: 2,
+	result: undefined
+}
+function objectAddition(a,b){
+if (a + b === 3) {result = 3}
+ 8 9km nr9c            n vbfggtghjukil;lkjhgfdcsxa/*
     # Print sum function and add as new key-value
         Declare a new function named printObj and a single parameter which will be the object from the challenge just above. Within this function you are to print to the screen a message of the operation performed. For Example:
 
